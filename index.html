@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Personal Information Form</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1>Personal Information Form</h1>
+    <form id="signup-form">
+      <!-- name area  -->
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+      <br />
+
+      <!-- email area  -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+      <br />
+      <!-- password area  -->
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required />
+      <br />
+
+      <!-- phone number area  -->
+      <label for="phone">Phone:</label>
+      <div class="phone-input">
+        <select id="country-code" name="country-code" required>
+          <option value="">Select Country Code</option>
+          <option value="+1">+1</option>
+          <option value="+91">+91</option>
+          <option value="+44">+880</option>
+          <option value="+61">+61</option>
+        </select>
+        <input type="number" id="phone" name="phone" required />
+      </div>
+      <br />
+      <!-- dob area  -->
+      <label for="Date of Birth">DOB:</label>
+      <input type="date" id="dob" name="dob" required />
+      <br />
+
+      <!-- gender  area  -->
+      <label>Gender:</label>
+      <div class="radio-options">
+        <div class="radio-option">
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="male">Male</label>
+        </div>
+        <div class="radio-option">
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Female</label>
+        </div>
+        <div class="radio-option">
+          <input type="radio" id="other" name="gender" value="other" />
+          <label for="other">Other</label>
+        </div>
+      </div>
+
+      <!-- relationship area  -->
+
+      <label>Relationship Status:</label>
+      <div class="radio-options">
+        <div class="radio-option">
+          <input
+            type="radio"
+            id="single"
+            name="relationship_status"
+            value="single"
+          />
+          <label for="single">Single</label>
+        </div>
+        <div class="radio-option">
+          <input
+            type="radio"
+            id="married"
+            name="relationship_status"
+            value="married"
+          />
+          <label for="married">Married</label>
+        </div>
+        <div class="radio-option">
+          <input
+            type="radio"
+            id="divorced"
+            name="relationship_status"
+            value="divorced"
+          />
+          <label for="divorced">Divorced</label>
+        </div>
+      </div>
+
+      <!-- occupation area  -->
+
+      <label>occupation</label>
+      <div class="radio-options">
+        <div class="radio-option">
+          <input type="radio" id="student" name="occupation" value="student" />
+          <label for="student">Student</label>
+        </div>
+        <div class="radio-option">
+          <input
+            type="radio"
+            id="Employed"
+            name="occupation"
+            value="Employed"
+          />
+          <label for="Employed">Employed</label>
+        </div>
+        <div class="radio-option">
+          <input
+            type="radio"
+            id="unemployed"
+            name="occupation"
+            value="unemployed"
+          />
+          <label for="unemployed">Unemployed</label>
+        </div>
+      </div>
+      <div>
+        <label for="address">Address</label>
+        <textarea id="address" name="address"></textarea>
+      </div>
+      <button type="submit">Sign Up</button>
+    </form>
+    <script src="index.js"></script>
+  </body>
+</html>

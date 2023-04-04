@@ -1,0 +1,149 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 40px;
+}
+
+form {
+  width: 800px;
+  height: 880px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #666666;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  background-color: #f8f8f8;
+  color: #333333;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0px 0px 5px #333333;
+}
+
+/* phone number css area  */
+.phone-input {
+  display: flex;
+  width: 820px;
+}
+#country-code {
+  width: 40%;
+  height: 50%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0px 0px 5px;
+  margin-right: 5px;
+  background-color: #f8f8f8;
+  color: #333333;
+  font-size: 16px;
+  font-weight: bold;
+}
+#phone {
+  flex-grow: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 0px 5px 5px 0px;
+  background-color: #f8f8f8;
+  color: #333333;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#country-code:focus,
+#phone:focus {
+  outline: none;
+  box-shadow: 0px 0px 5px #333333;
+}
+
+/* radio input style  */
+
+.radio-options {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.radio-option input[type="radio"] {
+  display: none;
+}
+
+.radio-option label {
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.radio-option label:before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.radio-option input[type="radio"]:checked + label:before {
+  background-color: #3e64af;
+  border-color: #3e64af;
+}
+
+/* text area  */
+textarea {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  height: 100px;
+  background-color: #f8f8f8;
+  margin-bottom: 3px;
+}
+
+/* btn area  */
+button {
+  background-color: #1e90ff;
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  float: right;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 350px;
+  margin-top: 12px;
+}
+
+button:hover {
+  background-color: #0066cc;
+}
